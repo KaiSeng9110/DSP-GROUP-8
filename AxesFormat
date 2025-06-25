@@ -1,0 +1,12 @@
+% Plot the final filtered signal
+t = (0:length(filtered_audio_2)-1) / Fs;  % Time vector
+
+figure;
+plot(t, filtered_audio_2, 'r');  % Plot in red
+xlabel('Time (s)', 'FontSize', 12, 'FontWeight', 'bold');
+ylabel('Amplitude', 'FontSize', 12, 'FontWeight', 'bold');
+title('Filtered Audio Signal', 'FontSize', 14, 'FontWeight', 'bold');
+xlim([0 max(t)]);
+ylim([-1.2 1.2]);  % Adjust if needed
+grid on;
+set(gca, 'FontSize', 12, 'LineWidth', 1.5, 'Box', 'on');
