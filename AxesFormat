@@ -44,7 +44,7 @@ grid on;
 % 3️. Plot Δ|H(w)| - Magnitude Difference
 figure;
 delta_H = abs(abs(H2) - abs(H1));
-plot(f, delta_H, 'k', 'LineWidth', 1.5);
+plot(f, delta_H, 'b', 'LineWidth', 1.5);
 title('\Delta|H(\omega)| = |H_{bandpass}(\omega)| - |H_{stop}(\omega)|');
 xlabel('Frequency (Hz)');
 ylabel('\Delta|H(\omega)|');
